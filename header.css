@@ -1,6 +1,6 @@
 body
 {
-	background-color: #191F16;
+	background-color: yellow;
 	opacity: 0.8;
 	color: #191F16;
 	font-family: Tahoma,Geneva,sans-serif;
@@ -52,4 +52,46 @@ a
 {
 	width: 200px;
 	margin: 10px 0 10px 0;
+}
+
+#header .menu > strong
+{
+	padding-right: 15px;
+	position: relative;
+}
+#header .menu > strong::after
+{
+	content: '';
+	height: 10px;
+	margin-top: -2px;
+	position: absolute;;
+	right: 0;
+	top: 50%;
+	width: 5px;
+}
+#header .btn > strong
+{
+	border-radius: 0;
+	cursor: pointer;
+	display: block;
+	font-size: 25px;
+	font-weight: 500;
+	line-height: 12px;
+	padding: 0px;
+}
+strong
+{
+	vertical-align: baseline;;
+}
+.drop
+{
+	cursor: default;
+	display: block;
+	margin-left: -20px;
+	position: absolute;
+	top: 100%;
+	width: 200px;
+	font size: 25px;
+	font-weight: 500
+	sfont-family: Tahoma,Geneva,sans-serif;
 }
