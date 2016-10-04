@@ -1,8 +1,21 @@
 body
 {
-	background:#bf5c71;
+	background: #191F16;
+	color: #333333;
 }
-.clearfix:after
+#headerbar
+{
+	background: #52CF0A;
+	opacity: 0.7;
+	height: 60px;
+	left: 0;
+	min-width: 150px;
+	position: fixed;
+	right: 0;
+	display: block;
+}
+
+.head:after
 {
 	display: block;
 	clear: both;
@@ -10,8 +23,8 @@ body
 .menu-wrap
 {
 	width: 100%;
-	box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
-	background: #3e3436;	
+	background: #52CF0A;
+	text-decoration: none;	
 }
 .menu
 {
@@ -27,14 +40,17 @@ body
 .menu a
 {
 	transition: all linear 0.15s;
-	color: #3e3436;
+	color: #333333;
+	text-decoration: none;
+	font-size: 23px;
 }
 .menu li:hover >a, .menu .current-item >a
 {
 	text-decoration: none;
-	color:#919191;
+	color:#000000;
+	font-size: 26px;
 }
-.menu .arrow
+.menu .dropdown
 {
 	font-size: 20px;
 	line-height: 0%;
@@ -50,29 +66,28 @@ body
 {
 	padding: 10px 40px;
 	display: inline-block;
-	text-shadow: 0px 1px 0px rgba(0,0,0,0.4);	
+	
 }
 .menu > ul > li:hover > a, .menu > ul > .current-item > a
 {
-	background: #2e2728;
+	background: transparent;
 }
 .menu li:hover .sub-menu
 {
-	z-index:1;
-	opacity:1;
+	z-index:0;
+	opacity:0.8;
 }
 .sub-menu
 {
-	width: 160%;
+	width: 140%;
 	padding: 5px 0px;
 	position: absolute;
 	top: 100%;
 	left: 0px;
-	z-index: -1;
+	z-index: 0;
 	opacity: 0;
 	transition:opacity linear 0.15s;
-	box-shadow:0px 2px 3px rgba(0,0,0,0.2);
-	background:#2e2728;
+	background:#52CF0A;
 
 }
 .sub-menu li
@@ -87,5 +102,6 @@ body
 }
 .sub-menu li a:hover, .sub-menu .current-item a
 {
-	background: #3e3436;
+	background: #191F16;
+	color: #52CF0A;
 }
