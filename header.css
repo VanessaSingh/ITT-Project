@@ -1,0 +1,55 @@
+body
+{
+	background-color: #191F16;
+	opacity: 0.8;
+	color: #191F16;
+	font-family: Tahoma,Geneva,sans-serif;
+	font-weight: 600;
+	text-rendering: optimizeLegibility;
+	line-height: 1;
+}
+#header
+{
+	background: #52CF0A;
+	opacity: 0.7;
+	height: 60px;
+	left: 0;
+	min-width: 150px;
+	position: fixed;
+	right: 0;
+	z-index: 500;
+	display: block;
+}
+#main-navigation
+{
+	margin-left: 300px;
+	float: left;
+	color: #191F16;
+	display: block;
+
+}
+a
+{
+	text-decoration: none;
+}
+#header .btn:not(.ac-btn)
+{
+	color: #191F16;
+	font-size: 25px;
+	font-weight: 500;
+	margin: 20px 15px 10px 10px;
+	vertical-align: top;
+	height: 35px;
+	line-height: 12px;
+}
+.btn
+{
+	cursor: pointer;
+	display: inline-block;
+}
+
+#logo
+{
+	width: 200px;
+	margin: 10px 0 10px 0;
+}

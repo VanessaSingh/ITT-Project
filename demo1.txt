@@ -1,3 +1,0 @@
-This is my second file.
-I am viewing differences.
-Demo.
