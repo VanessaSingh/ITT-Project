@@ -1,13 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Home</title>
-	<link rel="stylesheet" type="text/css" href="home.css">
-</head>
-<body>
+<?php echo '
 <header id="headerbar">
-	<div class="menu-wrap">
-	
+	<div class="logo">
+
+	</div>
+	<div class="menu-wrap">	
 		<nav class="menu">
 			<ul class="head">
 				<li><a href="#">Home</a></li>
@@ -19,11 +15,9 @@
 					</ul>
 				</li>
 				<li><a href="#">Playlists</a></li>
-				<li><a href="#">Log In</a></li>
 				<li><a href="#">About Us</a></li>
 			</ul>
 		</nav>
 		</header>
 	</div>
-</body>
-</html>
+';
