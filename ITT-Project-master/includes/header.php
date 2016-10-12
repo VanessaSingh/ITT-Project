@@ -1,16 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Home</title>
-	<link rel="stylesheet" type="text/css" href="home.css">
-</head>
-<body>
-	<header id="headerbar">
-	<!--<img src="logo.png" alt="logo" id="logo" height="10" width="10">-->
-	<div class="menu-wrap">
-	
+<?php echo '
+<header id="headerbar">
+	<div class="logo">
+
+	</div>
+	<div class="menu-wrap">	
 		<nav class="menu">
 			<ul class="head">
+				<li><input type="text" placeholder="Search" name="search></li>						
 				<li><a href="#">Home</a></li>
 				<li><a href="#">Discover<span class="dropdown">&#9660;</span></a>
 					<ul class="sub-menu">
@@ -20,11 +16,10 @@
 					</ul>
 				</li>
 				<li><a href="#">Playlists</a></li>
-				<li><a href="#">Log In</a></li>
 				<li><a href="#">About Us</a></li>
 			</ul>
+			
 		</nav>
 		</header>
 	</div>
-</body>
-</html>
+';
