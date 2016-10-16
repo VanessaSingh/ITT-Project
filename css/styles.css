@@ -420,6 +420,8 @@ there.
 body
 {
 	color: #333333;
+	font-size: 20px;
+	color: #333333;
 }
 #headerbar
 {
@@ -432,7 +434,9 @@ body
 	right: 0;
 	display:inline-block;
 	top:0;
+	
 }
+
 
 .head:after
 {

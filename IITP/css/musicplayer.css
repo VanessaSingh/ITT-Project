@@ -9,10 +9,9 @@
 html,
 body {
     height: 100%;
-	font-family: Tahoma,Geneva,sans-serif;
 	font-size: 20px;
 	color: #52CF0A;
-	background: #333333;
+	background: #FFFFFF;
 }
 
 body {
@@ -34,7 +33,6 @@ header.carousel {
     height: 60%;
 	color: #333333;
 	background-color: #52CF0A;
-	font-family: Tahoma,Geneva,sans-serif;
 	margin-bottom: 45px;
 	
 }
@@ -57,7 +55,7 @@ header.carousel .fill {
 .row{
 	color: #52CF0A;
 	font-size: 30px;
-	margin-left: 25px;
+	margin-left: 5px;
 }
 footer {
     margin: 50px 0;
