@@ -9,6 +9,10 @@
 html,
 body {
     height: 100%;
+	font-family: Tahoma,Geneva,sans-serif;
+	font-size: 20px;
+	color: #52CF0A;
+	background: #333333;
 }
 
 body {
@@ -26,13 +30,20 @@ body {
 /* Home Page Carousel */
 
 header.carousel {
-    height: 50%;
+	margin-top: 50px;
+    height: 60%;
+	color: #333333;
+	background-color: #52CF0A;
+	font-family: Tahoma,Geneva,sans-serif;
+	margin-bottom: 45px;
+	
 }
 
 header.carousel .item,
 header.carousel .item.active,
 header.carousel .carousel-inner {
     height: 100%;
+	font-size: 18px;
 }
 
 header.carousel .fill {
@@ -42,33 +53,12 @@ header.carousel .fill {
     background-size: cover;
 }
 
-/* 404 Page Styles */
 
-.error-404 {
-    font-size: 100px;
+.row{
+	color: #52CF0A;
+	font-size: 30px;
+	margin-left: 25px;
 }
-
-/* Pricing Page Styles */
-
-.price {
-    display: block;
-    font-size: 50px;
-    line-height: 50px;
-}
-
-.price sup {
-    top: -20px;
-    left: 2px;
-    font-size: 20px;
-}
-
-.period {
-    display: block;
-    font-style: italic;
-}
-
-/* Footer Styles */
-
 footer {
     margin: 50px 0;
 }
