@@ -11,6 +11,7 @@ html {
 }
 body {
   margin: 0;
+  background-color: #333333
 }
 article,
 aside,
@@ -1582,10 +1583,10 @@ pre code {
   overflow-y: scroll;
 }
 .container {
-  padding-right: 15px;
+  padding-right: 1px;
   padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 @media (min-width: 768px) {
   .container {
@@ -1617,6 +1618,7 @@ pre code {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
+  border-radius: 5px;
 }
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
   float: left;
@@ -1965,6 +1967,7 @@ pre code {
   }
   .col-md-3 {
     width: 25%;
+    border-radius: 5px;
   }
   .col-md-2 {
     width: 16.66666667%;

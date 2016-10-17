@@ -32,7 +32,7 @@
   position: relative;
   width: 100%;
   max-width: 960px;
-  margin: 0 auto;
+  margin-left: 290px;
   padding: 0 20px;
   box-sizing: border-box; }
 .column,
@@ -125,7 +125,9 @@ body {
   line-height: 1.6;
   font-weight: 400;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #222; }
+  padding-top: 120px;
+  background-color: #333333;
+  }
 
 
 /* Typography
@@ -419,19 +421,21 @@ there.
 
 body
 {
-	color: #333333;
+	background-color: #fff;
 }
 #headerbar
 {
-	background: #52CF0A;
+	background: rgb(35,36,40);
 	opacity: 0.7;
 	height: 80px;
 	left: 0;
 	min-width: 150px;
 	position: fixed;
 	right: 0;
-	display:inline-block;
-	top:0;
+	display: inline-block;
+	top: 0;
+  z-index: 3;
+  box-shadow: 1px 10px 10px black;
 }
 
 .head:after
@@ -443,7 +447,7 @@ body
 .menu-wrap
 {
 	width: 100%;
-	background: #52CF0A;
+	background: rgb(35,36,40);
 	text-decoration: none;	
   margin-top:0;
   margin-left:35%;
@@ -478,7 +482,7 @@ body
 }
 .menu > ul > li
 {
-	display: inline;
+	display: inline-block;
 	position: relative;
 	font-size: 20px;
 }
@@ -524,4 +528,55 @@ body
 {
 	background: #191F16;
 	color: #52CF0A;
+}
+
+.img-responsive
+{
+  
+  height: 190px;
+  width: 400px;
+  background-color: rgba(250,145,117,0.3);
+}
+
+.portfolio-item
+{
+  margin-bottom: 25px;
+  padding-top: 4px;
+}
+
+footer 
+{
+    margin: 50px 0;
+}
+
+.text-under-moods
+{
+  padding-left: 80px;
+  padding-top: 15px;
+}
+
+#hamburger-menu
+{
+  float: left;
+  height: 100%;
+  width: 230px;
+  position: fixed;
+  background-color: rgb(35,36,40);
+  margin-top: -40px;
+}
+
+#hamburger-elements
+{
+  color:#eeeeee;
+  margin-top: 20px;
+  list-style-type: none;
+  margin-left: 50px;
+  font-size: 20px;
+}
+
+#hamburger-li
+{
+  padding-top: 50px;
+  font-size: 90px;
+
 }
