@@ -41,88 +41,137 @@
                 <small>Your mood. Your joy.</small>
             </h1>
         </div>
-        
+
         <!-- Moods -->
 
         <!-- Discover_Row1 -->
         <div class="row">
-            <div class="col-md-3 portfolio-item">
-                <a href="#">
+            <div class="col-md-3 portfolio-item">                
+                <div class="hovereffect">
                     <img class="img-responsive" src="images/party.jpg" alt="">
+                    <div class="overlay">
+                       <h2>Hover effect 1</h2>
+                       <a class="info" href="#">link here</a>
+                    </div>
                     <p class="text-under-moods">Party</p>
-                </a>
+                </div>
+                
             </div>
             <div class="col-md-3 portfolio-item">
-                <a href="#">
+                <div class="hovereffect">
                     <img class="img-responsive" src="images/patriotic.jpg" alt="">
+                    <div class="overlay">
+                       <h2>Hover effect 1</h2>
+                       <a class="info" href="#">link here</a>
+                    </div>
                     <p class="text-under-moods">Patriotic</p>
-                </a>
+                </div>
             </div>
             <div class="col-md-3 portfolio-item">
-                <a href="#">
+                <div class="hovereffect">
                     <img class="img-responsive" src="images/romantic.jpg" alt="">
+                    <div class="overlay">
+                       <h2>Hover effect 1</h2>
+                       <a class="info" href="#">link here</a>
+                    </div>
                     <p class="text-under-moods">Romantic</p>
-                </a>
+                </div>
             </div>
             <div class="col-md-3 portfolio-item">
-                <a href="#">
+                <div class="hovereffect">
                     <img class="img-responsive" src="images/edm.png" alt="">
+                    <div class="overlay">
+                       <h2>Hover effect 1</h2>
+                       <a class="info" href="#">link here</a>
+                    </div>
                     <p class="text-under-moods">EDM</p>
-                </a>
+                </div>
             </div>
         </div>
 
         <div class="row">
             <div class="col-md-3 portfolio-item">
-                <a href="#">
+                <div class="hovereffect">
                     <img class="img-responsive" src="images/folk.jpg" alt="">
+                    <div class="overlay">
+                       <h2>Hover effect 1</h2>
+                       <a class="info" href="#">link here</a>
+                    </div>
                     <p class="text-under-moods">Folk</p>
-                </a>
+                </div>
             </div>
             <div class="col-md-3 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="images/meditation.jpg" alt="">\
+                <div class="hovereffect">
+                    <img class="img-responsive" src="images/meditation.jpg" alt="">
+                    <div class="overlay">
+                       <h2>Hover effect 1</h2>
+                       <a class="info" href="#">link here</a>
+                    </div>
                     <p class="text-under-moods">Meditation</p>
-                </a>
+                </div>
             </div>
             <div class="col-md-3 portfolio-item">
-                <a href="#">
+                <div class="hovereffect">
                     <img class="img-responsive" src="images/salsa.jpg" alt="">
+                    <div class="overlay">
+                       <h2>Hover effect 1</h2>
+                       <a class="info" href="#">link here</a>
+                    </div>
                     <p class="text-under-moods">Salsa</p>
-                </a>
+                </div>
             </div>
             <div class="col-md-3 portfolio-item">
-                <a href="#">
+                <div class="hovereffect">
                     <img class="img-responsive" src="images/sufi.jpg" alt="">
+                    <div class="overlay">
+                       <h2>Hover effect 1</h2>
+                       <a class="info" href="#">link here</a>
+                    </div>
                     <p class="text-under-moods">Sufi</p>
-                </a>
+                </div>
             </div>
         </div>
 
         <div class="row">
         <div class="col-md-3 portfolio-item">
-                <a href="#">
+                <div class="hovereffect">
                     <img class="img-responsive" src="images/travel.jpg" alt="">
+                    <div class="overlay">
+                       <h2>Hover effect 1</h2>
+                       <a class="info" href="#">link here</a>
+                    </div>
                     <p class="text-under-moods">Travel</p>
-                </a>
+                </div>
             </div>
             <div class="col-md-3 portfolio-item">
-                <a href="#">
+                <div class="hovereffect">
                     <img class="img-responsive" src="images/cheerful.jpg" alt="">
+                    <div class="overlay">
+                       <h2>Hover effect 1</h2>
+                       <a class="info" href="#">link here</a>
+                    </div>
                     <p class="text-under-moods">Cheerful</p>
-                </a>
+                </div>
             </div>
             <div class="col-md-3 portfolio-item">
-                <a href="#">
+                <div class="hovereffect">
                     <img class="img-responsive" src="images/dance.jpg" alt="">
+                    <div class="overlay">
+                       <h2>Hover effect 1</h2>
+                       <a class="info" href="#">link here</a>
+                    </div>
                     <p class="text-under-moods">Dance</p>
-                </a>
+                </div>
             </div>
             <div class="col-md-3 portfolio-item">
-                <a href="#">
+                <div class="hovereffect">
                     <img class="img-responsive" src="images/dreamy.jpg" alt="">
+                    <div class="overlay">
+                       <h2>Hover effect 1</h2>
+                       <a class="info" href="#">link here</a>
+                    </div>
                     <p class="text-under-moods">Dreamy</p>
-                </a>
+                </div>
             </div>
         </div>
 
