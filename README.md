@@ -17,3 +17,15 @@ Roll No: 16
 
 ===========================================================TODO=========================================================
 After the project is done, make Raleway-Roboto combination.
+
+
+============================================================ES==========================================================
+Writing the ES Lab here because I can.
+Project Submitted to:- Someone
+Submitted on:-Date
+Team Members
+ICT Code
+Conver page means it should be a complete cover page
+Project report: 1 question, 1 algo (1 psuedo code), .c and .hex file. Make sure .c has comments. Submission ONLY through soft copy. 
+Deadline's for the OP. It's Children's day! ^.^
+WAP to simulate a full-fledged calculator using LCD and Matrix-Keyboard interface. 
