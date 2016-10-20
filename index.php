@@ -12,49 +12,16 @@
     <title>Beats | Your Music, Anytime, Anywhere</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/musicplayer.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
 
-    <!-- Custom Fonts -->
-    <!--<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">-->
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
 </head>
 
 <body>
-	<!--<header id="headerbar">
-		<div class="logo">
-		</div>
-		<div class="menu-wrap">	
-			<nav class="menu">
-				<ul class="head">
-					<li><input type="text" placeholder="Search" name="search></li>						
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Discover<span class="dropdown">&#9660;</span></a>
-						<ul class="sub-menu">
-						<li><a href="#">Rock</a></li>
-						<li><a href="#">Pop</a></li>
-						<li><a href="#">Old Hindi</a></li>
-						</ul>
-					</li>
-					<li><a href="#">Playlists</a></li>
-					<li><a href="#">About Us</a></li>
-				</ul>
-			
-			</nav>
-		</div>
-		</header>-->
-
-
+<?php
     <header id="myCarousel" class="carousel slide">
         <!-- Indicators -->
         <ol class="carousel-indicators">
