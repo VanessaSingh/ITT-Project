@@ -1,23 +1,3 @@
-/*!
- * Start Bootstrap - Modern Business (http://startbootstrap.com/)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
-
-/* Global Styles */
-
-html,
-body {
-    height: 100%;
-	font-size: 20px;
-	color: #52CF0A;
-	background: #FFFFFF;
-}
-
-body {
-    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-}
-
 .img-portfolio {
     margin-bottom: 30px;
 }
@@ -27,24 +7,24 @@ body {
 }
 
 /* Home Page Carousel */
-
-header.carousel {
+.carousel 
+{
 	margin-top: 50px;
+    position: absolute;
     height: 60%;
 	color: #eeeeee;
 	background-color: #eeeeee;
-	margin-bottom: 45px;
-	
+    right: 0;
 }
 
-header.carousel .item,
-header.carousel .item.active,
-header.carousel .carousel-inner {
+.carousel .item,
+.carousel .item.active,
+.carousel .carousel-inner {
     height: 100%;
 	font-size: 18px;
 }
 
-header.carousel .fill {
+.carousel .fill {
     width: 100%;
     height: 100%;
     background-position: center;
@@ -63,19 +43,19 @@ footer {
 
 /* Responsive Styles */
 
-@media(max-width:991px) {
+@media(max-width:991px) 
+{
     .customer-img,
-    .img-related {
+    .img-related 
+    {
         margin-bottom: 30px;
     }
 }
 
-@media(max-width:767px) {
-    .img-portfolio {
+@media(max-width:767px) 
+{
+    .img-portfolio 
+    {
         margin-bottom: 15px;
-    }
-
-    header.carousel .carousel {
-        height: 70%;
     }
 }

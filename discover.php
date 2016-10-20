@@ -33,7 +33,7 @@
         require_once("includes/header.php");
         require_once("includes/hamburger.php");
     ?> 
-    <div class="container">
+    <div id="body-div" class="container">
 
         <!-- Discover Heading -->
         <div>

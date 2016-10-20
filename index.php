@@ -20,78 +20,79 @@
 
 </head>
 
-<body>
+<body style="background-color: #333333">
 <?php
-    <header id="myCarousel" class="carousel slide">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
+    require_once("includes/header.php");
+    require_once("includes/hamburger.php");
+?>
+    <div id="body-div">
+            <div id="myCarousel" class="carousel slide">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
 
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <div class="fill" style="background-image: '' "></div>
-                <div class="carousel-caption">
-                    <h2>Latest Songs</h2>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="fill" style="background-image:url('images/baarbaardekho.jpg')"></div>
+                        <div class="carousel-caption">
+                            <h2>Latest Songs</h2>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="fill" style="background-image:url('images/pink.jpg')"></div>
+                        <div class="carousel-caption">
+                            <h2>Upcoming Artists</h2>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="fill" style="background-image:url('images/dearzindagi.jpg')"></div>
+                        <div class="carousel-caption">
+                            <h2>Retro Music</h2>
+                        </div>
+                    </div>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="icon-prev"></span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="icon-next"></span>
+                    </a>
+                </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>
+                        Trending
+                    </p>
                 </div>
             </div>
-            <div class="item">
-                <div class="fill" style="background-image:''"></div>
-                <div class="carousel-caption">
-                    <h2>Upcoming Artists</h2>
+            <div class= "row">
+                <div class="col-md-3 col-sm-6">
+    	               <a href="Popular.html">
+                        <img class="img-responsive img-portfolio img-hover" src="images/popular.png" style="width:200px;height:200px;">
+                    </a>
                 </div>
-            </div>
-            <div class="item">
-                <div class="fill" style="background-image: ''"></div>
-                <div class="carousel-caption">
-                    <h2>Retro Music</h2>
+    			<div class="col-md-3 col-sm-6">
+                    <a href="jagjitsingh.html">
+                        <img class="img-responsive img-portfolio img-hover" src="images/jagjitsingh.jpg" style="width:200px;height:200px;">
+                    </a>
                 </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="switchfoot.html">
+                        <img class="img-responsive img-portfolio img-hover" src="images/switchfoot.jpeg" style="width:200px;height:200px;">
+                    </a>
+    			</div>
+    			<div class="col-md-3 col-sm-6">
+                    <a href="cokestudio.html">
+                        <img class="img-responsive img-portfolio img-hover" src="images/cokestudio.png" style="width:200px;height:200px;"">
+                    </a>
+    			</div>
             </div>
         </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next"></span>
-        </a>
-    </header>
-
-       
-        <div class="row">
-            <div class="col-lg-12">
-                <p>
-                    Trending
-                </p>
-            </div>
-	    </div>
-		
-		
-        	<div class="col-md-3 col-sm-6">
-	               <a href="Popular.html">
-                    <img class="img-responsive img-portfolio img-hover" src="popular.png" style="width:200px;height:200px;" alt=":P">
-                </a>
-            </div>
-			<div class="col-md-3 col-sm-6">
-                <a href="jagjitsingh.html">
-                    <img class="img-responsive img-portfolio img-hover" src="jagjitsingh.jpg" style="width:200px;height:200px;" alt=":P">
-                </a>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <a href="switchfoot.html">
-                    <img class="img-responsive img-portfolio img-hover" src="switchfoot.jpeg" style="width:200px;height:200px;" alt=":P">
-                </a>
-			</div>
-			<div class="col-md-3 col-sm-6">
-                <a href="cokestudio.html">
-                    <img class="img-responsive img-portfolio img-hover" src="cokestudio.png" style="width:200px;height:200px;" alt=":P">
-                </a>
-			</div>
-		
+    </div>	
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
