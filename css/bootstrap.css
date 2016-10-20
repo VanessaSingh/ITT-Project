@@ -1582,10 +1582,17 @@ pre code {
   overflow-y: scroll;
 }
 .container {
+<<<<<<< HEAD
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+=======
+  padding-right: 1px;
+  padding-left: 15px;
+  margin-right: 20px;
+  margin-left: 20px;
+>>>>>>> 610f14a1e14efd6005fb7c8c3768c3e122c9df98
 }
 @media (min-width: 768px) {
   .container {
@@ -1617,6 +1624,10 @@ pre code {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
+<<<<<<< HEAD
+=======
+  border-radius: 5px;
+>>>>>>> 610f14a1e14efd6005fb7c8c3768c3e122c9df98
 }
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
   float: left;
@@ -1965,6 +1976,10 @@ pre code {
   }
   .col-md-3 {
     width: 25%;
+<<<<<<< HEAD
+=======
+    border-radius: 5px;
+>>>>>>> 610f14a1e14efd6005fb7c8c3768c3e122c9df98
   }
   .col-md-2 {
     width: 16.66666667%;
