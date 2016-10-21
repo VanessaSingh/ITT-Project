@@ -12,11 +12,13 @@
     <title>Beats | Your Music, Anytime, Anywhere</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/musicplayer.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/musicplayer.css" rel="stylesheet">
+
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
 </head>
 
@@ -63,29 +65,24 @@
                     </a>
                 </div>
             <div class="row">
-                <div class="col-lg-12">
-                    <p>
+                <div class="col-md-12" style="color:#EEEEEE">
+                    <h3>
                         Trending
-                    </p>
+                    </h3>
                 </div>
             </div>
             <div class= "row">
-                <div class="col-md-3 col-sm-6">
-    	               <a href="Popular.html">
-                        <img class="img-responsive img-portfolio img-hover" src="images/popular.png" style="width:200px;height:200px;">
-                    </a>
-                </div>
-    			<div class="col-md-3 col-sm-6">
+    			<div class="col-md-4">
                     <a href="jagjitsingh.html">
                         <img class="img-responsive img-portfolio img-hover" src="images/jagjitsingh.jpg" style="width:200px;height:200px;">
                     </a>
                 </div>
-                <div class="col-md-3 col-sm-6">
+                <div class="col-md-4">
                     <a href="switchfoot.html">
                         <img class="img-responsive img-portfolio img-hover" src="images/switchfoot.jpeg" style="width:200px;height:200px;">
                     </a>
     			</div>
-    			<div class="col-md-3 col-sm-6">
+    			<div class="col-md-4">
                     <a href="cokestudio.html">
                         <img class="img-responsive img-portfolio img-hover" src="images/cokestudio.png" style="width:200px;height:200px;"">
                     </a>

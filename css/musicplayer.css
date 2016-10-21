@@ -2,7 +2,13 @@
     margin-bottom: 30px;
 }
 
-.img-hover:hover {
+.img
+{
+    transition: all 0.2s ease-in;
+    -webkit-transition:all .2s ease-in-out;
+}
+.img-hover:hover 
+{
     opacity: 0.8;
 }
 
@@ -14,7 +20,8 @@
     height: 60%;
 	color: #eeeeee;
 	background-color: #eeeeee;
-    right: 0;
+    width: 1000px;
+    height: 400px;
 }
 
 .carousel .item,
@@ -30,19 +37,6 @@
     background-position: center;
     background-size: cover;
 }
-
-
-.row{
-	color: #52CF0A;
-	font-size: 30px;
-	margin-left: 5px;
-}
-footer {
-    margin: 50px 0;
-}
-
-/* Responsive Styles */
-
 @media(max-width:991px) 
 {
     .customer-img,

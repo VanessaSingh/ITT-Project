@@ -424,7 +424,7 @@ body
 #headerbar
 {
 	background: rgb(35,36,40);
-	opacity: 0.7;
+	opacity: 0.95;
   top:0;
 	height: 80px;
 	left: 0;
@@ -438,6 +438,7 @@ body
 {
   margin-top: 80px;
   margin-left: 290px;
+  color: #EEEEEE;
 }
 
 .img-responsive
