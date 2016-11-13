@@ -43,7 +43,7 @@
                     <img class="img-responsive" src="images/party.jpg" alt="">
                     <div class="overlay">
                        <h2>Hover effect 1</h2>
-                       <a class="info" href="#">link here</a>
+                       <a class="info" href="playlist.php?mood=party">link here</a>
                     </div>
                     <p class="text-under-moods">Party</p>
                 </div>
@@ -54,7 +54,7 @@
                     <img class="img-responsive" src="images/patriotic.jpg" alt="">
                     <div class="overlay">
                        <h2>Hover effect 1</h2>
-                       <a class="info" href="#">link here</a>
+                       <a class="info" href="playlist.php?mood=patriotic">link here</a>
                     </div>
                     <p class="text-under-moods">Patriotic</p>
                 </div>
@@ -64,7 +64,7 @@
                     <img class="img-responsive" src="images/romantic.jpg" alt="">
                     <div class="overlay">
                        <h2>Hover effect 1</h2>
-                       <a class="info" href="#">link here</a>
+                       <a class="info" href="playlist.php?mood=romantic">link here</a>
                     </div>
                     <p class="text-under-moods">Romantic</p>
                 </div>
@@ -74,7 +74,7 @@
                     <img class="img-responsive" src="images/edm.png" alt="">
                     <div class="overlay">
                        <h2>Hover effect 1</h2>
-                       <a class="info" href="#">link here</a>
+                       <a class="info" href="playlist.php?mood=edm">link here</a>
                     </div>
                     <p class="text-under-moods">EDM</p>
                 </div>
@@ -87,7 +87,7 @@
                     <img class="img-responsive" src="images/folk.jpg" alt="">
                     <div class="overlay">
                        <h2>Hover effect 1</h2>
-                       <a class="info" href="#">link here</a>
+                       <a class="info" href="playlist.php?mood=folk">link here</a>
                     </div>
                     <p class="text-under-moods">Folk</p>
                 </div>
@@ -97,7 +97,7 @@
                     <img class="img-responsive" src="images/meditation.jpg" alt="">
                     <div class="overlay">
                        <h2>Hover effect 1</h2>
-                       <a class="info" href="#">link here</a>
+                       <a class="info" href="playlist.php?mood=meditation">link here</a>
                     </div>
                     <p class="text-under-moods">Meditation</p>
                 </div>
@@ -107,7 +107,7 @@
                     <img class="img-responsive" src="images/salsa.jpg" alt="">
                     <div class="overlay">
                        <h2>Hover effect 1</h2>
-                       <a class="info" href="#">link here</a>
+                       <a class="info" href="playlist.php?mood=salsa">link here</a>
                     </div>
                     <p class="text-under-moods">Salsa</p>
                 </div>
@@ -117,7 +117,7 @@
                     <img class="img-responsive" src="images/sufi.jpg" alt="">
                     <div class="overlay">
                        <h2>Hover effect 1</h2>
-                       <a class="info" href="#">link here</a>
+                       <a class="info" href="playlist.php?mood=sufi">link here</a>
                     </div>
                     <p class="text-under-moods">Sufi</p>
                 </div>
@@ -130,7 +130,7 @@
                     <img class="img-responsive" src="images/travel.jpg" alt="">
                     <div class="overlay">
                        <h2>Hover effect 1</h2>
-                       <a class="info" href="#">link here</a>
+                       <a class="info" href="playlist.php?mood=travel">link here</a>
                     </div>
                     <p class="text-under-moods">Travel</p>
                 </div>
@@ -140,7 +140,7 @@
                     <img class="img-responsive" src="images/cheerful.jpg" alt="">
                     <div class="overlay">
                        <h2>Hover effect 1</h2>
-                       <a class="info" href="#">link here</a>
+                       <a class="info" href="playlist.php?mood=cheerful">link here</a>
                     </div>
                     <p class="text-under-moods">Cheerful</p>
                 </div>
@@ -150,7 +150,7 @@
                     <img class="img-responsive" src="images/dance.jpg" alt="">
                     <div class="overlay">
                        <h2>Hover effect 1</h2>
-                       <a class="info" href="#">link here</a>
+                       <a class="info" href="playlist.php?mood=dance">link here</a>
                     </div>
                     <p class="text-under-moods">Dance</p>
                 </div>
@@ -160,7 +160,7 @@
                     <img class="img-responsive" src="images/dreamy.jpg" alt="">
                     <div class="overlay">
                        <h2>Hover effect 1</h2>
-                       <a class="info" href="#">link here</a>
+                       <a class="info" href="playlist.php?mood=dreamy">link here</a>
                     </div>
                     <p class="text-under-moods">Dreamy</p>
                 </div>
