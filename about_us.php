@@ -1,4 +1,36 @@
-=====================Beats Music Player=====================
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+        <title>Discover | Beats</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="css/styles.css" rel="stylesheet">
+
+    </head>
+    <body style="background-color: #333333">
+        <?php
+            require_once('includes/header.php');
+            require_once('includes/hamburger.php');
+        ?>
+        <div id='body-div'>
+            <h1 class='page-header'>
+                About us
+                <div d="about_us-div"></div>
+            </h1>
+            <p>
+                ===================================================Beats Music Player==================================================
 
 
 Beats is an interactive online player that aims at being better than current music players  in terms of UI, design and functionality. Beats gives you access to more than 1000 songs and the perfect playlist for what you are doing, how you are feeling, or what you want to hear.  With a vast range of songs Beats lets you access any kind of music anywhere. 
@@ -15,15 +47,11 @@ Singh
 Reg No: 140911092
 Roll No: 16
 
-=====================TODO=====================
-
-
+===========================================================TODO=========================================================
 After the project is done, make Raleway-Roboto combination.
 
 
-=====================ES=====================
-
-
+============================================================ES==========================================================
 Writing the ES Lab here because I can.
 Project Submitted to:- Someone
 Submitted on:-Date
@@ -33,3 +61,7 @@ Conver page means it should be a complete cover page
 Project report: 1 question, 1 algo (1 psuedo code), .c and .hex file. Make sure .c has comments. Submission ONLY through soft copy. 
 Deadline's for the OP. It's Children's day! ^.^
 WAP to simulate a full-fledged calculator using LCD and Matrix-Keyboard interface. 
+
+            </p>
+        </div>
+    </body>
