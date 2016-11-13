@@ -9,6 +9,15 @@ html {
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
+*:focus
+{
+   outline: 0;
+}
+*:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 body {
   margin: 0;
 }
@@ -2534,10 +2543,6 @@ input[type="checkbox"] {
 }
 input[type="file"] {
   display: block;
-}
-input[type="range"] {
-  display: block;
-  width: 100%;
 }
 select[multiple],
 select[size] {
@@ -6765,26 +6770,3 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
-input[type="range"] 
-{
-  -webkit-appearance: none;
-  width: 150px;
-  height: 2px;
-  background: aqua;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin:10px;
-}
-
-input[type="range"]::-webkit-slider-thumb 
-{
-  -webkit-appearance: none;
-  width: 20px;
-  height: 20px;
-  border-radius: 100%;
-  background: #009900;
-  position: relative;
-  border: 3px solid aquamarine;
-  z-index: 3;
-  cursor: pointer;
-}

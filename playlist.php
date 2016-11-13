@@ -28,7 +28,9 @@
     require_once("includes/hamburger.php");
 ?>
     <div id="body-div" class="container">
+    	<div id="above-footer">
     	 <?php 
+    	 	$songArray = array(50);
             $name = $_GET["name"];
             $artist = $_GET["artist"];
             $album = $_GET["album"];
@@ -62,7 +64,7 @@
             }
             echo '<h1 class="page-header" style="color:#eeeeee">' .$filter;
             echo '<small> Lose yourself</small></h1>';
-            //$query = "SELECT * FROM songs WHERE genre=pop";
+            $query = "SELECT * FROM songs";
             $result = mysqli_query($connection, $query);
             if($result)
             {
@@ -74,17 +76,17 @@
                                 <th>Artist</th>
                                 <th>Duration</th>
                             </tr>';
-                $i=1;
-
+                $i=0;
                 while($row = mysqli_fetch_assoc($result))
                 {
                     echo '<tr>
-                            <td> '.$i.' </td>
+                            <td> '.($i+1).' </td>
                             <td><a onclick=playThisSong("'.$row["url"].'")>'.$row["name"].'</a></td>
                             <td>'.$row["album"].'</td>
                             <td>'.$row["artist"].'</td>
                             <td>'.$row["duration"].'</td>';
                     echo '</tr>';
+                    echo '<p id="songArray'.$i.'" style="display:none">'.$row["url"]; 
                     $i++;
                 }
             }
@@ -94,68 +96,23 @@
             }
 
         ?>
-        <div id="seekbar-div">
-            <audio id="audioplayer" onpause="UpdatePlayPause()" onended="EndOfAudio()" ontimeupdate="SeekBar()" ondurationchange="CreateSeekBar()" onvolumechange="ChangeVolume()">     
-            </audio>
-            <input type="range" id="audioSeekBar" onchange="audioSeekBar()"/>
-            <input type="range" name="">
-            <span id="timelapsed"></span> <br>
-            <input type="range" id="volumeSeekBar" min="0" max="1" step="any" onchange="change_Volume()" />
         </div>
-        <script type="text/javascript">
-            var audioPlayer = document.getElementById("audioplayer");
-            function CreateSeekBar()
-            {
-                var seekbar = document.getElementById("audioSeekBar"); 
-                seekbar.min = 0; 
-                seekbar.max = audioPlayer.duration; 
-                seekbar.value = 0; 
-                var timelapsed = document.getElementById("timelapsed"); 
-                timelapsed.innerHTML = "0/" + Math.round(audio.timelapsed) + "seconds";
-            }
-            function UpdatePlayPause()
-            {
-                if(audioPlayer.paused || audioPlayer.ended)
-                {
-                    audioPlayer.play();
-                }
-                else
-                {
-                    audioPlayer.pause();
-                }
-            }
-            function EndOfAudio()
-            {
-                document.getElementById("audioSeekBar").value = 0; 
-                document.getElementById("timelapsed").innerHTML = "0/" + Math.round(audio.duration); 
-            }
-            function audioSeekBar()
-            {
-                var seekValue = document.getElementById("audioSeekBar");
-                audioPlayer.currentTime = seekValue.value;
-            }
-            function SeekBar() 
-            {
-                var seekbar = document.getElementById("audioSeekBar"); 
-                seekbar.value = audioPlayer.currentTime; 
-                var timelapsed = document.getElementById("timelapsed"); 
-                timelapsed.innerHTML = Math.round(audio_custom.currentTime) + "/" + Math.round(audio_custom.duration) + "(seconds)"; 
-            }
-            function change_Volume() 
-            { 
-                var volume = document.getElementById("volumeSeekBar"); 
-                audioPlayer.volume = volume.value; 
-            } 
-        </script>
-        <script type="text/javascript">
-            function playThisSong(url)
-            {
-                var thisURL = url;
-                var audio = document.getElementById("audioplayer");
-                audio.removeAttribute("src");
-                audio.setAttribute("src", thisURL);
-                audio.play(); 
-            }
+        <div id="footer">
+            HELLO
+            <div id="seekbar-div">
+                <audio id="audioplayer" onpause="UpdatePlayPause()" onended="EndOfAudio()" ontimeupdate="SeekBar()" ondurationchange="CreateSeekBar()" onvolumechange="ChangeVolume()">     
+                </audio>
+                <input type="range" id="audioSeekBar" onchange="audioSeekBar()"/>
+                <span id="timelapsed"></span> <br>
+                <button id="previousButton" onclick="togglePlay()"></button>
+                <button id="playButton" onclick="togglePlay()"></button>
+                <button id="nextButton" onclick="togglePlay()"></button>
+                <button id="shuffleButton" onclick="togglePlay()"></button>
+                <button id="repeatButton" onclick="togglePlay()"></button>
+                <input type="range" id="volumeSeekBar" min="0" max="1" step="any" onchange="change_Volume()" />
+            </div>
+        </div>
+        <script type="text/javascript" src="includes/common.js">
         </script>
     </div>
 </body>

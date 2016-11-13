@@ -28,6 +28,15 @@
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+*:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+*:focus
+{
+  outline: none;
+}
 .container {
   position: relative;
   width: 100%;
@@ -589,60 +598,140 @@ footer
   background-color: #424242;
 }
 
-input[type="range"] 
-{
-  -webkit-appearance: none;
-  width: 150px;
-  height: 2px;
-  background: aqua;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin:10px;
-}
-
-input[type="range"]::-webkit-slider-thumb 
-{
-  -webkit-appearance: none;
-  width: 20px;
-  height: 20px;
-  border-radius: 100%;
-  background: #009900;
-  position: relative;
-  border: 3px solid aquamarine;
-  z-index: 3;
-  cursor: pointer;
-}
-
-input[type=range]
+input[type="range"]
 {
   -webkit-appearance: none;
 }
-
-input[type=range]::-webkit-slider-runnable-track 
-{
-  width: 300px;
-  height: 5px;
-  background: #ddd;
-  border: none;
-  border-radius: 3px;
+input[type=range] {
+    /*removes default webkit styles*/
+    -webkit-appearance: none;
+    width: 560px;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    width: 10px;
+    height: 1px;
+    border: none;
+    border-radius: 3px;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 14px;
+    width: 14px;
+    border-radius: 100%;
+    background: goldenrod;
+    margin-top: -6px;
+    transition: 0.2s ease-in-out;
 }
 
-input[type=range]::-webkit-slider-thumb 
+input[type=range]::-webkit-slider-thumb:hover
 {
-  -webkit-appearance: none;
-  border: none;
-  height: 16px;
-  width: 16px;
-  border-radius: 50%;
-  background: goldenrod;
-  margin-top: -4px;
+    -webkit-appearance: none;
+    border: none;
+    height: 29px;
+    width: 29px;
+    border-radius: 100%;
+    background: goldenrod;
+    margin-top: -13px;
+    cursor: pointer;
 }
 input[type=range]:focus 
 {
-  outline: none;
+    outline: none;
 }
 
-input[type=range]:focus::-webkit-slider-runnable-track 
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}
+
+#audioSeekBar
 {
-  background: #ccc;
+  margin-left: 300px
+}
+
+#volumeSeekBar
+{
+  transform: rotate(90deg);
+  display:none;
+}
+
+#above-footer
+{
+  margin-bottom: 120px;
+}
+
+#footer
+{
+  width: 100%;
+  top: 550px;
+  background: rgb(35,36,40);
+  opacity: 0.95;
+  height: 100px;
+  position:absolute;
+  position: fixed;
+  margin-left: -290px;
+  z-index: 55;
+  box-shadow: 10px 10px 10px 15px black;
+}
+
+#playButton
+{
+  margin-left: 1000px;
+  margin-top: -50px;
+  position: absolute;
+  background-image: url("../images/button/play.png");
+  background-position: center;
+  background-size: cover;
+  border:none;
+  height: 80px;
+  width: 79px;
+  transition: 0.2s ease-in-out;
+}
+
+#playButton:hover
+{
+  background-image: url("../images/button/red_play.png");
+  cursor: pointer;
+}
+#previousButton
+{
+  margin-left: 928px;
+  margin-top: -47px;
+  position: absolute;
+  background-image: url("../images/button/previous.png");
+  background-position: center;
+  background-size: cover;
+  border:none;
+  height: 80px;
+  width: 30px;
+  transition: 0.2s ease-in-out;
+}
+
+#previousButton:hover
+{
+  background-image: url("../images/button/red_previous.png");
+  cursor: pointer; 
+}
+#nextButton
+{
+  margin-left: 1092px;
+  margin-top: -47px;
+  position: absolute;
+  background-image: url("../images/button/next.png");
+  background-position: center;
+  background-size: cover;
+  border:none;
+  height: 80px;
+  width: 30px;
+  transition: 0.2s ease-in-out;
+}
+
+#nextButton:hover
+{
+  background-image: url("../images/button/red_next.png");
+  cursor: pointer; 
+}
+#songArray
+{
+  background-color: red;
 }

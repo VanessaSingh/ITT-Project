@@ -47,6 +47,7 @@
                     </div>
                     <p class="text-under-moods">Party</p>
                 </div>
+                <input type="range" name="" style ="">
             </div>
             <div class="col-md-3 portfolio-item">
                 <div class="hovereffect">
