@@ -43,7 +43,7 @@
             if($artist)
             {
                 $query = "SELECT * FROM songs WHERE artist='{$artist}'";
-                $filter = "Arist";
+                $filter = "Artist";
             }
             if($album)
             {
@@ -60,8 +60,8 @@
                 $query = "SELECT * FROM songs WHERE mood='{$mood}'";
                 $filter = "Mood";
             }
-            echo '<h1 class="page-header" style="color:#eeeeee">'.$query;;
-            echo '<small>Lose yourself</small></h1>';
+            echo '<h1 class="page-header" style="color:#eeeeee">' .$filter;
+            echo '<small> Lose yourself</small></h1>';
             //$query = "SELECT * FROM songs WHERE genre=pop";
             $result = mysqli_query($connection, $query);
             if($result)
@@ -80,10 +80,12 @@
                 {
                     echo '<tr>
                             <td> '.$i.' </td>
-                            <td>'.$row["name"].'</td>
+                            <td><a onclick=play()>'.$row["name"].'</a></td>
                             <td>'.$row["album"].'</td>
                             <td>'.$row["artist"].'</td>
-                            <td>'.$row["duration"].'</td>';                    
+                            <td>'.$row["duration"].'</td>';
+                    echo '</tr>';
+                    echo '<audio id="audio" src="'.$row["url"].'"></audio>';                    
                     $i++;
                 }
             }
@@ -93,7 +95,13 @@
             }
 
         ?>
-
+    <script type="text/javascript">
+        function play()
+        {
+            var audio = document.getElementById("audio");
+            audio.play();
+        }
+    </script>
 </body>
 
 </html>
