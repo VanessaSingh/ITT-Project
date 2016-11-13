@@ -6765,3 +6765,26 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+input[type="range"] 
+{
+  -webkit-appearance: none;
+  width: 150px;
+  height: 2px;
+  background: aqua;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin:10px;
+}
+
+input[type="range"]::-webkit-slider-thumb 
+{
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background: #009900;
+  position: relative;
+  border: 3px solid aquamarine;
+  z-index: 3;
+  cursor: pointer;
+}

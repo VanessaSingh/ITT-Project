@@ -47,7 +47,6 @@
                     </div>
                     <p class="text-under-moods">Party</p>
                 </div>
-                
             </div>
             <div class="col-md-3 portfolio-item">
                 <div class="hovereffect">

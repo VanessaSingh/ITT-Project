@@ -80,12 +80,11 @@
                 {
                     echo '<tr>
                             <td> '.$i.' </td>
-                            <td><a onclick=play()>'.$row["name"].'</a></td>
+                            <td><a onclick=playThisSong("'.$row["url"].'")>'.$row["name"].'</a></td>
                             <td>'.$row["album"].'</td>
                             <td>'.$row["artist"].'</td>
                             <td>'.$row["duration"].'</td>';
                     echo '</tr>';
-                    echo '<audio id="audio" src="'.$row["url"].'"></audio>';                    
                     $i++;
                 }
             }
@@ -95,13 +94,70 @@
             }
 
         ?>
-    <script type="text/javascript">
-        function play()
-        {
-            var audio = document.getElementById("audio");
-            audio.play(); 
-        }
-    </script>
+        <div id="seekbar-div">
+            <audio id="audioplayer" onpause="UpdatePlayPause()" onended="EndOfAudio()" ontimeupdate="SeekBar()" ondurationchange="CreateSeekBar()" onvolumechange="ChangeVolume()">     
+            </audio>
+            <input type="range" id="audioSeekBar" onchange="audioSeekBar()"/>
+            <input type="range" name="">
+            <span id="timelapsed"></span> <br>
+            <input type="range" id="volumeSeekBar" min="0" max="1" step="any" onchange="change_Volume()" />
+        </div>
+        <script type="text/javascript">
+            var audioPlayer = document.getElementById("audioplayer");
+            function CreateSeekBar()
+            {
+                var seekbar = document.getElementById("audioSeekBar"); 
+                seekbar.min = 0; 
+                seekbar.max = audioPlayer.duration; 
+                seekbar.value = 0; 
+                var timelapsed = document.getElementById("timelapsed"); 
+                timelapsed.innerHTML = "0/" + Math.round(audio.timelapsed) + "seconds";
+            }
+            function UpdatePlayPause()
+            {
+                if(audioPlayer.paused || audioPlayer.ended)
+                {
+                    audioPlayer.play();
+                }
+                else
+                {
+                    audioPlayer.pause();
+                }
+            }
+            function EndOfAudio()
+            {
+                document.getElementById("audioSeekBar").value = 0; 
+                document.getElementById("timelapsed").innerHTML = "0/" + Math.round(audio.duration); 
+            }
+            function audioSeekBar()
+            {
+                var seekValue = document.getElementById("audioSeekBar");
+                audioPlayer.currentTime = seekValue.value;
+            }
+            function SeekBar() 
+            {
+                var seekbar = document.getElementById("audioSeekBar"); 
+                seekbar.value = audioPlayer.currentTime; 
+                var timelapsed = document.getElementById("timelapsed"); 
+                timelapsed.innerHTML = Math.round(audio_custom.currentTime) + "/" + Math.round(audio_custom.duration) + "(seconds)"; 
+            }
+            function change_Volume() 
+            { 
+                var volume = document.getElementById("volumeSeekBar"); 
+                audioPlayer.volume = volume.value; 
+            } 
+        </script>
+        <script type="text/javascript">
+            function playThisSong(url)
+            {
+                var thisURL = url;
+                var audio = document.getElementById("audioplayer");
+                audio.removeAttribute("src");
+                audio.setAttribute("src", thisURL);
+                audio.play(); 
+            }
+        </script>
+    </div>
 </body>
 
 </html>
