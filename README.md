@@ -1,4 +1,4 @@
-===================================================Beats Music Player==================================================
+=====================Beats Music Player=====================
 
 
 Beats is an interactive online player that aims at being better than current music players  in terms of UI, design and functionality. Beats gives you access to more than 1000 songs and the perfect playlist for what you are doing, how you are feeling, or what you want to hear.  With a vast range of songs Beats lets you access any kind of music anywhere. 
@@ -15,11 +15,13 @@ Singh
 Reg No: 140911092
 Roll No: 16
 
-===========================================================TODO=========================================================
+=====================TODO=====================
+
+
 After the project is done, make Raleway-Roboto combination.
 
 
-============================================================ES==========================================================
+=====================ES=====================
 Writing the ES Lab here because I can.
 Project Submitted to:- Someone
 Submitted on:-Date
