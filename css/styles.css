@@ -419,6 +419,7 @@ there.
 body
 {
 	color: #333333;
+  font-size: 15px;
 }
 
 #headerbar
@@ -433,6 +434,7 @@ body
   z-index: 500;
   box-shadow: 1px 10px 10px black;
 }
+
 
 #body-div
 {
@@ -582,67 +584,84 @@ footer
 
 .below-line
 {
-  width: 230px; 
-  margin-left: -30px;
-  margin-bottom: 30px;
-  min-height: 1px;
-  background-color: #424242;
+    width: 230px; 
+    margin-left: -30px;
+    margin-bottom: 30px;
+    min-height: 1px;
+    background-color: #424242;
 }
-
-input[type="range"] 
+#search-wrap 
 {
-  -webkit-appearance: none;
-  width: 150px;
-  height: 2px;
-  background: aqua;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin:10px;
-}
-
-input[type="range"]::-webkit-slider-thumb 
-{
-  -webkit-appearance: none;
-  width: 20px;
-  height: 20px;
-  border-radius: 100%;
-  background: #009900;
+  margin: 25px 200px;
+  display: inline-block;
   position: relative;
-  border: 3px solid aquamarine;
+  height: 50px;
+  float: right;
+  padding: 0;
+}
+
+input[type="text"] 
+{
+  height: 40px;
+  font-size: 20px;
+  display: inline-block;
+  font-weight: 25;
+  /*outline-color: #232428;*/
+  /*border-color: #232428;*/
+  border: none;
+  outline: none;
+  color: #FFFFFF;
+  padding: 10px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-right: 60px;
+  width: 0px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.5;
+  background: none;
   z-index: 3;
+  transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+  animation: reverse;
   cursor: pointer;
 }
 
-input[type=range]
-{
-  -webkit-appearance: none;
-}
-
-input[type=range]::-webkit-slider-runnable-track 
-{
-  width: 300px;
-  height: 5px;
-  background: #ddd;
+/*input[type="text"]:focus:hover {
   border: none;
-  border-radius: 3px;
-}
-
-input[type=range]::-webkit-slider-thumb 
-{
-  -webkit-appearance: none;
-  border: none;
-  height: 16px;
-  width: 16px;
-  border-radius: 50%;
-  background: goldenrod;
-  margin-top: -4px;
-}
-input[type=range]:focus 
-{
   outline: none;
+  border-bottom: 2px solid #FFFFFF;
+}*/
+
+input[type="text"]:focus 
+{
+  border: none;
+  outline: none;
+  width: 500px;
+  z-index: 1;
+  border-bottom: 1px solid #FFFFFF;
+  cursor: text;
+}
+input[type="submit"] 
+{
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  float: right;
+  background: url('../images/search.png') center center no-repeat;
+  text-indent: -10000px;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  cursor: pointer;
+  opacity: 0.2;
+  cursor: pointer;
+  transition: opacity .4s ease;
 }
 
-input[type=range]:focus::-webkit-slider-runnable-track 
+input[type="submit"]:hover 
 {
-  background: #ccc;
+  opacity: 0.8;
 }
