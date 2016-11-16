@@ -136,7 +136,7 @@ body {
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222; }
   padding-top: 120px;
-  background-color: #333333;
+  background-color: #757575;
   }
 
 
@@ -566,29 +566,44 @@ footer
   height: 100%;
   width: 230px;
   position: fixed;
-  background-color: rgb(35,36,40);
+  background: rgb(35,36,40);
   z-index: 1;
 }
 
 #hamburger-elements
 {
-  color:#eeeeee;
+  color: #EEEEEE;
   margin-top: 40px;
   position: absolute;
   list-style-type: none;
   margin-left: 30px;
 }
-
 .hamburger-li
 {
-  font-size: 15px;
+  margin-left: 23px;
+  font-size: 18px;
 }
 
 #hamburger-elements li a
 {
   color: #EEEEEE;
+  text-decoration: none;
+}
+#hamburger-menu:hover
+{
+  background-color: #26a69a;
+  opacity: 0.8;
+}
+#hamburger-menu:hover li a
+{
+  color: #333333;
 }
 
+#hamburger-elements li a:hover
+{
+  color: #333333;
+  font-size: 24px;
+}
 .below-line
 {
   width: 230px; 
