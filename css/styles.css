@@ -28,6 +28,15 @@
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+*:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+*:focus
+{
+  outline: none;
+}
 .container {
   position: relative;
   width: 100%;
@@ -127,7 +136,7 @@ body {
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222; }
   padding-top: 120px;
-  background-color: #333333;
+  background-color: #757575;
   }
 
 
@@ -419,7 +428,6 @@ there.
 body
 {
 	color: #333333;
-  font-size: 15px;
 }
 
 #headerbar
@@ -435,14 +443,20 @@ body
   box-shadow: 1px 10px 10px black;
 }
 
-
 #body-div
 {
   margin-top: 80px;
   margin-left: 290px;
   color: #EEEEEE;
 }
-
+/*#login-div
+{
+  margin-top: 200px;
+}*/
+#login-div .input[type="submit"]:hover
+{
+  color: #26a69a;
+}
 .img-responsive
 {
   height: 190px;
@@ -559,109 +573,188 @@ footer
   height: 100%;
   width: 230px;
   position: fixed;
-  background-color: rgb(35,36,40);
+  background: rgb(35,36,40);
   z-index: 1;
 }
 
 #hamburger-elements
 {
-  color:#eeeeee;
+  color: #EEEEEE;
   margin-top: 40px;
   position: absolute;
   list-style-type: none;
   margin-left: 30px;
 }
-
 .hamburger-li
 {
-  font-size: 15px;
+  margin-left: 23px;
+  font-size: 18px;
 }
 
 #hamburger-elements li a
 {
   color: #EEEEEE;
+  text-decoration: none;
+}
+#hamburger-menu:hover
+{
+  background-color: #26a69a;
+  opacity: 0.8;
+}
+#hamburger-menu:hover li a
+{
+  color: #333333;
+}
+
+#hamburger-elements li a:hover
+{
+  color: #333333;
+  font-size: 24px;
 }
 
 .below-line
 {
-    width: 230px; 
-    margin-left: -30px;
-    margin-bottom: 30px;
-    min-height: 1px;
-    background-color: #424242;
-}
-#search-wrap 
-{
-  margin: 25px 200px;
-  display: inline-block;
-  position: relative;
-  height: 50px;
-  float: right;
-  padding: 0;
+  width: 230px; 
+  margin-left: -30px;
+  margin-bottom: 30px;
+  min-height: 1px;
+  background-color: #424242;
 }
 
-input[type="text"] 
+input[type="range"]
 {
-  height: 40px;
-  font-size: 20px;
-  display: inline-block;
-  font-weight: 25;
-  /*outline-color: #232428;*/
-  /*border-color: #232428;*/
-  border: none;
-  outline: none;
-  color: #FFFFFF;
-  padding: 10px;
-  padding-top: 1px;
-  padding-bottom: 1px;
-  padding-right: 60px;
-  width: 0px;
+  -webkit-appearance: none;
+}
+input[type=range] {
+    /*removes default webkit styles*/
+    -webkit-appearance: none;
+    width: 560px;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    width: 10px;
+    height: 1px;
+    border: none;
+    border-radius: 3px;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 14px;
+    width: 14px;
+    border-radius: 100%;
+    background: goldenrod;
+    margin-top: -6px;
+    transition: 0.2s ease-in-out;
+}
+
+input[type=range]::-webkit-slider-thumb:hover
+{
+    -webkit-appearance: none;
+    border: none;
+    height: 29px;
+    width: 29px;
+    border-radius: 100%;
+    background: goldenrod;
+    margin-top: -13px;
+    cursor: pointer;
+}
+input[type=range]:focus 
+{
+    outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}
+
+#audioSeekBar
+{
+  margin-left: 300px
+}
+
+#volumeSeekBar
+{
+  transform: rotate(90deg);
+  display:none;
+}
+
+#above-footer
+{
+  margin-bottom: 120px;
+}
+
+#footer
+{
+  width: 100%;
+  top: 550px;
+  background: rgb(35,36,40);
+  opacity: 0.95;
+  height: 100px;
+  position:absolute;
+  position: fixed;
+  margin-left: -290px;
+  z-index: 55;
+  box-shadow: 10px 10px 10px 15px black;
+}
+
+#playButton
+{
+  margin-left: 1000px;
+  margin-top: -50px;
   position: absolute;
-  top: 0;
-  right: 0;
-  opacity: 0.5;
-  background: none;
-  z-index: 3;
-  transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
-  animation: reverse;
+  background-image: url("../images/button/play.png");
+  background-position: center;
+  background-size: cover;
+  border:none;
+  height: 80px;
+  width: 79px;
+  transition: 0.2s ease-in-out;
+}
+
+#playButton:hover
+{
+  background-image: url("../images/button/red_play.png");
   cursor: pointer;
 }
-
-/*input[type="text"]:focus:hover {
-  border: none;
-  outline: none;
-  border-bottom: 2px solid #FFFFFF;
-}*/
-
-input[type="text"]:focus 
+#previousButton
 {
-  border: none;
-  outline: none;
-  width: 500px;
-  z-index: 1;
-  border-bottom: 1px solid #FFFFFF;
-  cursor: text;
-}
-input[type="submit"] 
-{
-  height: 40px;
-  width: 40px;
-  display: inline-block;
-  float: right;
-  background: url('../images/search.png') center center no-repeat;
-  text-indent: -10000px;
-  border: none;
+  margin-left: 928px;
+  margin-top: -47px;
   position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 2;
-  cursor: pointer;
-  opacity: 0.2;
-  cursor: pointer;
-  transition: opacity .4s ease;
+  background-image: url("../images/button/previous.png");
+  background-position: center;
+  background-size: cover;
+  border:none;
+  height: 80px;
+  width: 30px;
+  transition: 0.2s ease-in-out;
 }
 
-input[type="submit"]:hover 
+#previousButton:hover
 {
-  opacity: 0.8;
+  background-image: url("../images/button/red_previous.png");
+  cursor: pointer; 
+}
+#nextButton
+{
+  margin-left: 1092px;
+  margin-top: -47px;
+  position: absolute;
+  background-image: url("../images/button/next.png");
+  background-position: center;
+  background-size: cover;
+  border:none;
+  height: 80px;
+  width: 30px;
+  transition: 0.2s ease-in-out;
+}
+
+#nextButton:hover
+{
+  background-image: url("../images/button/red_next.png");
+  cursor: pointer; 
+}
+#songArray
+{
+  background-color: red;
 }
