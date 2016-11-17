@@ -2,14 +2,19 @@ var audioPlayer = document.getElementById("audioplayer");
 var songQueue=[];
 var currentlyPlaying;
 var repeatFlag = 0;
-function playThisSong(url, id)
+function playThisSong(url, id, length)
 {    
     for(var i = 0;i < 55; i++)
     {
-        var song = document.getElementById("songArray"+i).innerHTML;
-        //alert(song);
-        songQueue[i] = song;
-        //alert(songQueue[i]);
+        if(document.getElementById("songArray"+i))
+        {
+            var song = document.getElementById("songArray"+i).innerHTML;
+            //alert(song);
+            songQueue[i] = song;
+            //alert(songQueue[i]);
+        }
+        else
+            break;
     }
     var thisURL = url;
     var audio = document.getElementById("audioplayer");

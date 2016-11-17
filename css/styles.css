@@ -170,9 +170,9 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1EAEDB; }
+  color: #FFFFFF; }
 a:hover {
-  color: #0FA0CE; }
+  color: #FFFFFF; }
 
 
 /* Buttons
@@ -781,12 +781,51 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   cursor: pointer; 
 }
 
-tr
+.songsTr
 {
   transition: 0.3s ease-in-out;
 }
-tr:hover
+.songsTr:hover
 {
   background-color: #616161;
   cursor: pointer;
+}
+
+#hamburger-table 
+{
+  margin-top: 30px;
+  font-size: 17px;
+  text-align: center;
+}
+
+#hamburger-table td
+{
+  border-bottom: none; 
+}
+
+.hamburger-text
+{
+  margin-left: 50px;
+}
+
+.hamburgerTr
+{
+  transition: 0.3s ease-in-out;
+}
+.hamburgerTr:hover
+{
+  background-color: #f44336;
+  cursor: pointer;
+}
+
+#songsTable
+{
+  width:100%;
+}
+
+.header-text
+{
+  position: absolute;
+  margin-top: 10px;
+  right: 20px;
 }

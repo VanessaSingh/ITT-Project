@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <!--link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"-->
 
     <title>Discover | Beats</title>
 
@@ -64,11 +64,11 @@
             }
             echo '<h1 class="page-header" style="color:#eeeeee">' .$filter;
             echo '<small> Lose yourself</small></h1>';
-            $query = "SELECT * FROM songs";
+            //$query = "SELECT * FROM songs";
             $result = mysqli_query($connection, $query);
             if($result)
             {
-                echo '<table>
+                echo '<table id="songsTable">
                             <tr>
                                 <th>#</th>
                                 <th>Title</th>
@@ -79,10 +79,10 @@
                 $i=0;
                 while($row = mysqli_fetch_assoc($result))
                 {
-                    echo '<tr onclick=playThisSong("'.$row["url"].'",'.$i.')>
+                    echo '<tr class="songsTr" onclick=playThisSong("'.$row["url"].'",'.$i.','.count($row["name"]).');window.open("login.php")>
                             <td> '.($i+1).' </td>
-                            <td><a onclick=playThisSong("'.$row["url"].'",'.$i.')>'.$row["name"].'</a></td>
-                            <td>'.$row["album"].'</td>
+                            <td><a onclick=playThisSong("'.$row["url"].'",'.$i.','.count($row["name"]).')>'.$row["name"].'</a></td>
+                            <td><a href="playlist.php?album='.$row["album"].'">'.$row["album"].'</td>
                             <td><a href="playlist.php?artist='.$row["artist"].'">'.$row["artist"].'</a></td>
                             <td>'.$row["duration"].'</td>';
                     echo '</tr>';
