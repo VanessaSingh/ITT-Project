@@ -1,10 +1,10 @@
 var audioPlayer = document.getElementById("audioplayer");    
 var songQueue=[];
-var currentlyPlaying = 0;
+var currentlyPlaying;
 var repeatFlag = 0;
 function playThisSong(url, id)
 {    
-    for(var i = 0;i < 15; i++)
+    for(var i = 0;i < 55; i++)
     {
         var song = document.getElementById("songArray"+i).innerHTML;
         //alert(song);
@@ -22,7 +22,7 @@ function playNext()
 {
     audioPlayer.pause();
     audioPlayer.removeAttribute("src");
-    audioPlayer.setAttribute("src",songQueue[currentlyPlaying++]);
+    audioPlayer.setAttribute("src",songQueue[++currentlyPlaying]);
     audioPlayer.play();
 }
 
@@ -30,7 +30,7 @@ function playPrevious()
 {
     audioPlayer.pause();
     audioPlayer.removeAttribute("src");
-    audioPlayer.setAttribute("src",songQueue[currentlyPlaying--]);
+    audioPlayer.setAttribute("src",songQueue[--currentlyPlaying]);
     audioPlayer.play();
 }
 
@@ -90,7 +90,11 @@ audioPlayer.onplaying = function() {
 
 function shuffle_songQueue()
 {
+    audioPlayer.pause();
     songQueue = shuffle(songQueue);
+    audioPlayer.removeAttribute("src");
+    audioPlayer.setAttribute("src",songQueue[0]);
+    audioPlayer.play();
 }
 
 function EndOfAudio()
@@ -123,3 +127,17 @@ function change_Volume()
     var volume = document.getElementById("volumeSeekBar"); 
     audioPlayer.volume = volume.value; 
 } 
+
+function shuffle(array) 
+{
+  var currentIndex = array.length, temporaryValue, randomIndex;
+  while (0 !== currentIndex) 
+  {
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+  return array;
+}
