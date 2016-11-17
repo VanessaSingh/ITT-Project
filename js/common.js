@@ -1,6 +1,7 @@
 var audioPlayer = document.getElementById("audioplayer");    
 var songQueue=[];
 var currentlyPlaying = 0;
+var i= 0;
 function playThisSong(url, id, length)
 {    
     for(var i = 0;i < 15; i++)
@@ -19,16 +20,25 @@ function playThisSong(url, id, length)
 }
 function playNext()
 {
+    /*for (var i = 0; i <= 16; i++) 
+    {
+        alert(songQueue[i]);   
+    }*/
     currentlyPlaying = i + 1;
-    document.getElementById("songArray").removeAttribute("src");
-    document.getElementById("songArray").setAttribute("src",songQueue[i+1]);
+    var audio = document.getElementById("audioplayer");
+    audio.pause();
+    audio.removeAttribute("src");
+    audio.setAttribute("src",songQueue[i++]);
+    audio.play();
 }
 
-function playPrevious(i)
+function playPrevious()
 {
     currentlyPlaying = i - 1;
-    document.getElementById("songArray").removeAttribute("src");
-    document.getElementById("songArray").setAttribute("src",songQueue[i-1]);
+    audioPlayer.pause();
+    audioPlayer.removeAttribute("src");
+    audioPlayer.setAttribute("src",songQueue[i--]);
+    audioPlayer.play();
 }
 
 function CreateSeekBar()

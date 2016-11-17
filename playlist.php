@@ -81,7 +81,7 @@
                 {
                     echo '<tr>
                             <td> '.($i+1).' </td>
-                            <td><a onclick=playThisSong("'.$row["url"].'",'.$i.','.$length.')>'.$row["name"].'</a></td>
+                            <td><a onclick=playThisSong("'.$row["url"].'",'.$i.')>'.$row["name"].'</a></td>
                             <td>'.$row["album"].'</td>
                             <td><a href="playlist.php?artist='.$row["artist"].'">'.$row["artist"].'</a></td>
                             <td>'.$row["duration"].'</td>';
@@ -105,9 +105,9 @@
                 <span id="timelapsed"></span> <br>
             </div>
             <div id ="footer-buttons">
-                <button id="previousButton" onclick="togglePlay()"></button>
-                <button id="playButton" onclick="playNext()"></button>
-                <button id="nextButton" onclick="playPrevious()"></button>
+                <button id="previousButton" onclick="playPrevious()"></button>
+                <button id="playButton" onclick="togglePlay()"></button>
+                <button id="nextButton" onclick="playNext()"></button>
                 <button id="shuffleButton" onclick="shuffle_songQueue()"></button>
                 <button id="repeatButton" onclick="toggleRepeat()"></button>
                 <input type="range" id="volumeSeekBar" min="0" max="1" step="any" onchange="change_Volume()" />
