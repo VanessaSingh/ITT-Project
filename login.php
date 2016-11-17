@@ -31,12 +31,12 @@
   {
     $user = $_POST["username"];
     $pass = $_POST["password"];
-    $query = "Select * from users";
-    $result = mysqli_query($connection,$query);
+    $query1 = "Select * from users";
+    $result1 = mysqli_query($connection,$query1);
     $flag = 0;
-    if($result)
+    if($result1)
     {
-      while($row = mysqli_fetch_assoc($result))
+      while($row = mysqli_fetch_assoc($result1))
       {
         if($row["email"]==$user&&$row["password"]==$pass)
         {
@@ -46,8 +46,17 @@
       }
       if($flag == 1)
       {
-        $_SESSION["username"] = 1;
-        header("Location:index.php");
+        $query2 = "SELECT uid FROM users where email='{$user}'";
+        $result2 = mysqli_query($connection,$query2);
+        if($result2)
+        {
+          while($row = mysqli_fetch_assoc($result2))
+          {
+            $_SESSION["uid"] = $row["uid"];
+            $_SESSION["username"] = 1;
+            header("Location:index.php");
+          }
+        }
       }
     }
   }

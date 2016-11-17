@@ -40,130 +40,93 @@
         <div class="row">
             <div class="col-md-3 portfolio-item">                
                 <div class="hovereffect">
-                    <img class="img-responsive" src="images/party.jpg" alt="">
-                    <div class="overlay">
-                       <h2>Hover effect 1</h2>
-                       <a class="info" href="playlist.php?mood=party">link here</a>
-                    </div>
+                    <img onclick="window.open('playlist.php?mood=party')" class="img-responsive" src="images/party.jpg" alt="">                    
+                    <a class="info" href="playlist.php?mood=party"></a>
+                </div>
                     <p class="text-under-moods">Party</p>
-                </div>
-                <input type="range" name="" style ="">
+                
             </div>
             <div class="col-md-3 portfolio-item">
                 <div class="hovereffect">
-                    <img class="img-responsive" src="images/patriotic.jpg" alt="">
-                    <div class="overlay">
-                       <h2>Hover effect 1</h2>
-                       <a class="info" href="playlist.php?mood=patriotic">link here</a>
-                    </div>
+                    <img onclick="window.open('playlist.php?mood=patriotic')" class="img-responsive" src="images/patriotic.jpg" alt="">
+                    <a class="info" href="playlist.php?mood=patriotic"></a>
+                </div>
                     <p class="text-under-moods">Patriotic</p>
-                </div>
             </div>
             <div class="col-md-3 portfolio-item">
                 <div class="hovereffect">
-                    <img class="img-responsive" src="images/romantic.jpg" alt="">
-                    <div class="overlay">
-                       <h2>Hover effect 1</h2>
-                       <a class="info" href="playlist.php?mood=romantic">link here</a>
-                    </div>
+                    <img onclick="window.open('playlist.php?mood=romantic')" class="img-responsive" src="images/romantic.jpg" alt="">
+                    <a class="info" href="playlist.php?mood=romantic"></a>
+                </div>
                     <p class="text-under-moods">Romantic</p>
-                </div>
             </div>
             <div class="col-md-3 portfolio-item">
                 <div class="hovereffect">
-                    <img class="img-responsive" src="images/edm.png" alt="">
-                    <div class="overlay">
-                       <h2>Hover effect 1</h2>
-                       <a class="info" href="playlist.php?mood=edm">link here</a>
-                    </div>
-                    <p class="text-under-moods">EDM</p>
+                    <img onclick="window.open('playlist.php?mood=edm')" class="img-responsive" src="images/edm.png" alt="">
+                    <a class="info" href="playlist.php?mood=edm"></a>
                 </div>
+                    <p class="text-under-moods">EDM</p>
             </div>
         </div>
 
         <div class="row">
             <div class="col-md-3 portfolio-item">
                 <div class="hovereffect">
-                    <img class="img-responsive" src="images/folk.jpg" alt="">
-                    <div class="overlay">
-                       <h2>Hover effect 1</h2>
-                       <a class="info" href="playlist.php?mood=folk">link here</a>
-                    </div>
+                    <img onclick="window.open('playlist.php?mood=folk')" class="img-responsive" src="images/folk.jpg" alt="">
+                    <a class="info" href="playlist.php?mood=folk"></a>
+                </div>
                     <p class="text-under-moods">Folk</p>
-                </div>
             </div>
             <div class="col-md-3 portfolio-item">
                 <div class="hovereffect">
-                    <img class="img-responsive" src="images/meditation.jpg" alt="">
-                    <div class="overlay">
-                       <h2>Hover effect 1</h2>
-                       <a class="info" href="playlist.php?mood=meditation">link here</a>
-                    </div>
+                    <img onclick="window.open('playlist.php?mood=meditation')" class="img-responsive" src="images/meditation.jpg" alt="">
+                    <a class="info" href="playlist.php?mood=meditation"></a>
+                </div>
                     <p class="text-under-moods">Meditation</p>
-                </div>
             </div>
             <div class="col-md-3 portfolio-item">
-                <div class="hovereffect">
+                <div onclick="window.open('playlist.php?mood=salsa')" class="hovereffect">
                     <img class="img-responsive" src="images/salsa.jpg" alt="">
-                    <div class="overlay">
-                       <h2>Hover effect 1</h2>
-                       <a class="info" href="playlist.php?mood=salsa">link here</a>
-                    </div>
-                    <p class="text-under-moods">Salsa</p>
+                    <a class="info" href="playlist.php?mood=salsa"></a>
                 </div>
+                    <p class="text-under-moods">Salsa</p>
             </div>
             <div class="col-md-3 portfolio-item">
-                <div class="hovereffect">
+                <div onclick="window.open('playlist.php?mood=sufi')" class="hovereffect">
                     <img class="img-responsive" src="images/sufi.jpg" alt="">
-                    <div class="overlay">
-                       <h2>Hover effect 1</h2>
-                       <a class="info" href="playlist.php?mood=sufi">link here</a>
-                    </div>
-                    <p class="text-under-moods">Sufi</p>
+                    <a class="info" href="playlist.php?mood=sufi"></a>
                 </div>
+                    <p class="text-under-moods">Sufi</p>
             </div>
         </div>
 
         <div class="row">
         <div class="col-md-3 portfolio-item">
                 <div class="hovereffect">
-                    <img class="img-responsive" src="images/travel.jpg" alt="">
-                    <div class="overlay">
-                       <h2>Hover effect 1</h2>
-                       <a class="info" href="playlist.php?mood=travel">link here</a>
-                    </div>
-                    <p class="text-under-moods">Travel</p>
+                    <img onclick="window.open('playlist.php?mood=travel')" class="img-responsive" src="images/travel.jpg" alt="">
+                    <a class="info" href="playlist.php?mood=travel"></a>
                 </div>
+                    <p class="text-under-moods">Travel</p>
             </div>
             <div class="col-md-3 portfolio-item">
                 <div class="hovereffect">
-                    <img class="img-responsive" src="images/cheerful.jpg" alt="">
-                    <div class="overlay">
-                       <h2>Hover effect 1</h2>
-                       <a class="info" href="playlist.php?mood=cheerful">link here</a>
-                    </div>
+                    <img onclick="window.open('playlist.php?mood=cheerful')" class="img-responsive" src="images/cheerful.jpg" alt="">
                     <p class="text-under-moods">Cheerful</p>
                 </div>
             </div>
             <div class="col-md-3 portfolio-item">
                 <div class="hovereffect">
-                    <img class="img-responsive" src="images/dance.jpg" alt="">
-                    <div class="overlay">
-                       <h2>Hover effect 1</h2>
-                       <a class="info" href="playlist.php?mood=dance">link here</a>
-                    </div>
-                    <p class="text-under-moods">Dance</p>
+                    <img onclick="window.open('playlist.php?mood=dance')" class="img-responsive" src="images/dance.jpg" alt="">
+                    <a class="info" href="playlist.php?mood=dance"></a>
                 </div>
+                    <p class="text-under-moods">Dance</p>
             </div>
             <div class="col-md-3 portfolio-item">
                 <div class="hovereffect">
-                    <img class="img-responsive" src="images/dreamy.jpg" alt="">
-                    <div class="overlay">
-                       <h2>Hover effect 1</h2>
-                       <a class="info" href="playlist.php?mood=dreamy">link here</a>
-                    </div>
-                    <p class="text-under-moods">Dreamy</p>
+                    <img onclick="window.open('playlist.php?mood=dreamy')" class="img-responsive" src="images/dreamy.jpg" alt="">
+                    <a class="info" href="playlist.php?mood=dreamy"></a>
                 </div>
+                    <p class="text-under-moods">Dreamy</p>
             </div>
         </div>
 

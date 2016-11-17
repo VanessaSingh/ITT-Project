@@ -25,12 +25,11 @@
             require_once('includes/hamburger.php');
         ?>
         <div id='body-div'>
+        <div id="about_us-div">
             <h1 class='page-header'>
                 About us
-                <div d="about_us-div"></div>
             </h1>
             <p>
-                ===================================================Beats Music Player==================================================
 
 
 Beats is an interactive online player that aims at being better than current music players  in terms of UI, design and functionality. Beats gives you access to more than 1000 songs and the perfect playlist for what you are doing, how you are feeling, or what you want to hear.  With a vast range of songs Beats lets you access any kind of music anywhere. 
@@ -46,22 +45,7 @@ Vanessa
 Singh
 Reg No: 140911092
 Roll No: 16
-
-===========================================================TODO=========================================================
-After the project is done, make Raleway-Roboto combination.
-
-
-============================================================ES==========================================================
-Writing the ES Lab here because I can.
-Project Submitted to:- Someone
-Submitted on:-Date
-Team Members
-ICT Code
-Conver page means it should be a complete cover page
-Project report: 1 question, 1 algo (1 psuedo code), .c and .hex file. Make sure .c has comments. Submission ONLY through soft copy. 
-Deadline's for the OP. It's Children's day! ^.^
-WAP to simulate a full-fledged calculator using LCD and Matrix-Keyboard interface. 
-
             </p>
+            </div>
         </div>
     </body>

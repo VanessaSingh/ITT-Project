@@ -74,18 +74,18 @@
             </div>
             <div class= "row">
     			<div class="col-md-4">
-                    <a href="jagjitsingh.html">
-                        <img class="img-responsive img-portfolio img-hover" src="images/jagjitsingh.jpg" style="width:200px;height:200px;">
+                    <a href="playlist.php?mood=cheerful">
+                        <img class="img-responsive img-portfolio img-hover" src="images/jagjitsingh.jpg" style="width:300px;height:200px;">
                     </a>
                 </div>
                 <div class="col-md-4">
-                    <a href="switchfoot.html">
-                        <img class="img-responsive img-portfolio img-hover" src="images/switchfoot.jpeg" style="width:200px;height:200px;">
+                    <a href="playlist.php?mood=dreamy">
+                        <img class="img-responsive img-portfolio img-hover" src="images/switchfoot.jpeg" style="width:300px;height:200px;">
                     </a>
     			</div>
     			<div class="col-md-4">
-                    <a href="cokestudio.html">
-                        <img class="img-responsive img-portfolio img-hover" src="images/cokestudio.png" style="width:200px;height:200px;"">
+                    <a href="playlist.php?mood=patriotic">
+                        <img class="img-responsive img-portfolio img-hover" src="images/cokestudio.png" style="width:300px;height:200px;"">
                     </a>
     			</div>
             </div>

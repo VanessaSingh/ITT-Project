@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <!--link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"-->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
     <title>Discover | Beats</title>
 
@@ -23,6 +23,7 @@
 
 <body style="background-color: #333333">
 <?php
+	session_start();
     require_once("includes/dbcon.php");
     require_once("includes/header.php");
     require_once("includes/hamburger.php");
@@ -64,7 +65,8 @@
             }
             echo '<h1 class="page-header" style="color:#eeeeee">' .$filter;
             echo '<small> Lose yourself</small></h1>';
-            //$query = "SELECT * FROM songs";
+            if(!$query)
+                $query = "SELECT * FROM songs";
             $result = mysqli_query($connection, $query);
             if($result)
             {
@@ -79,7 +81,7 @@
                 $i=0;
                 while($row = mysqli_fetch_assoc($result))
                 {
-                    echo '<tr class="songsTr" onclick=playThisSong("'.$row["url"].'",'.$i.','.count($row["name"]).');window.open("login.php")>
+                    echo '<tr class="songsTr" onclick=playThisSong("'.$row["url"].'",'.$i.','.count($row["name"]).');window.open("insertdb.php?songid='.$row["sid"].'")>
                             <td> '.($i+1).' </td>
                             <td><a onclick=playThisSong("'.$row["url"].'",'.$i.','.count($row["name"]).')>'.$row["name"].'</a></td>
                             <td><a href="playlist.php?album='.$row["album"].'">'.$row["album"].'</td>
@@ -105,6 +107,7 @@
                 <span id="timelapsed"></span> <br>
             </div>
             <div id ="footer-buttons">
+                <img id="music-image-footer" src="images/music.jpg">
                 <button id="previousButton" onclick="playPrevious()"></button>
                 <button id="playButton" onclick="togglePlay()"></button>
                 <button id="nextButton" onclick="playNext()"></button>
