@@ -136,7 +136,7 @@ body {
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222; }
   padding-top: 120px;
-  background-color: #757575;
+  background-color: #333333;
   }
 
 
@@ -566,44 +566,29 @@ footer
   height: 100%;
   width: 230px;
   position: fixed;
-  background: rgb(35,36,40);
+  background-color: rgb(35,36,40);
   z-index: 1;
 }
 
 #hamburger-elements
 {
-  color: #EEEEEE;
+  color:#eeeeee;
   margin-top: 40px;
   position: absolute;
   list-style-type: none;
   margin-left: 30px;
 }
+
 .hamburger-li
 {
-  margin-left: 23px;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 #hamburger-elements li a
 {
   color: #EEEEEE;
-  text-decoration: none;
-}
-#hamburger-menu:hover
-{
-  background-color: #26a69a;
-  opacity: 0.8;
-}
-#hamburger-menu:hover li a
-{
-  color: #333333;
 }
 
-#hamburger-elements li a:hover
-{
-  color: #333333;
-  font-size: 24px;
-}
 .below-line
 {
   width: 230px; 
@@ -634,7 +619,7 @@ input[type=range]::-webkit-slider-thumb {
     height: 14px;
     width: 14px;
     border-radius: 100%;
-    background: goldenrod;
+    background: #f44336;
     margin-top: -6px;
     transition: 0.2s ease-in-out;
 }
@@ -646,7 +631,7 @@ input[type=range]::-webkit-slider-thumb:hover
     height: 29px;
     width: 29px;
     border-radius: 100%;
-    background: goldenrod;
+    background: #f44336;
     margin-top: -13px;
     cursor: pointer;
 }
@@ -687,6 +672,15 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   margin-left: -290px;
   z-index: 55;
   box-shadow: 10px 10px 10px 15px black;
+}
+
+#seekbar-div
+{
+  margin-top: 30px;
+}
+#footer-buttons
+{
+  margin-top: -5px;
 }
 
 #playButton
@@ -746,7 +740,13 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   background-image: url("../images/button/red_next.png");
   cursor: pointer; 
 }
-#songArray
+
+tr
 {
-  background-color: red;
+  transition: 0.3s ease-in-out;
+}
+
+tr:hover
+{
+  background-color: #616161;
 }

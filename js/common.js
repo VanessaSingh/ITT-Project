@@ -1,6 +1,7 @@
 var audioPlayer = document.getElementById("audioplayer");    
 var songQueue=[];
-function playThisSong(url)
+var currentlyPlaying = 0;
+function playThisSong(url, id, length)
 {    
     for(var i = 0;i < 15; i++)
     {
@@ -14,15 +15,18 @@ function playThisSong(url)
     audio.removeAttribute("src");
     audio.setAttribute("src", thisURL);
     audio.play(); 
+    currentlyPlaying = id;
 }
-function playNext(i)
+function playNext()
 {
+    currentlyPlaying = i + 1;
     document.getElementById("songArray").removeAttribute("src");
     document.getElementById("songArray").setAttribute("src",songQueue[i+1]);
 }
 
 function playPrevious(i)
 {
+    currentlyPlaying = i - 1;
     document.getElementById("songArray").removeAttribute("src");
     document.getElementById("songArray").setAttribute("src",songQueue[i-1]);
 }
@@ -66,6 +70,12 @@ audioPlayer.onpause = function() {
 audioPlayer.onplaying = function() {
   isPlaying = true;
 };
+
+function shuffle_songQueue()
+{
+    songQueue = shuffle(songQueue);
+}
+
 function EndOfAudio()
 {
     document.getElementById("audioSeekBar").value = 0; 

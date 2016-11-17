@@ -81,9 +81,9 @@
                 {
                     echo '<tr>
                             <td> '.($i+1).' </td>
-                            <td><a onclick=playThisSong("'.$row["url"].'")>'.$row["name"].'</a></td>
+                            <td><a onclick=playThisSong("'.$row["url"].'",'.$i.','.$length.')>'.$row["name"].'</a></td>
                             <td>'.$row["album"].'</td>
-                            <td>'.$row["artist"].'</td>
+                            <td><a href="playlist.php?artist='.$row["artist"].'">'.$row["artist"].'</a></td>
                             <td>'.$row["duration"].'</td>';
                     echo '</tr>';
                     echo '<p id="songArray'.$i.'" style="display:none">'.$row["url"]; 
@@ -98,21 +98,22 @@
         ?>
         </div>
         <div id="footer">
-            HELLO
             <div id="seekbar-div">
                 <audio id="audioplayer" onpause="UpdatePlayPause()" onended="EndOfAudio()" ontimeupdate="SeekBar()" ondurationchange="CreateSeekBar()" onvolumechange="ChangeVolume()">     
                 </audio>
-                <input type="range" id="audioSeekBar" onchange="audioSeekBar()"/>
+                <input type="range" id="audioSeekBar" onchange="audioSeekBar()" value="0"/>
                 <span id="timelapsed"></span> <br>
+            </div>
+            <div id ="footer-buttons">
                 <button id="previousButton" onclick="togglePlay()"></button>
-                <button id="playButton" onclick="togglePlay()"></button>
-                <button id="nextButton" onclick="togglePlay()"></button>
-                <button id="shuffleButton" onclick="togglePlay()"></button>
-                <button id="repeatButton" onclick="togglePlay()"></button>
+                <button id="playButton" onclick="playNext()"></button>
+                <button id="nextButton" onclick="playPrevious()"></button>
+                <button id="shuffleButton" onclick="shuffle_songQueue()"></button>
+                <button id="repeatButton" onclick="toggleRepeat()"></button>
                 <input type="range" id="volumeSeekBar" min="0" max="1" step="any" onchange="change_Volume()" />
             </div>
         </div>
-        <script type="text/javascript" src="includes/common.js">
+        <script type="text/javascript" src="js/common.js">
         </script>
     </div>
 </body>
