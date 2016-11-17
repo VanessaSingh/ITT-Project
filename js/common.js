@@ -1,8 +1,8 @@
 var audioPlayer = document.getElementById("audioplayer");    
 var songQueue=[];
 var currentlyPlaying = 0;
-var i= 0;
-function playThisSong(url, id, length)
+var repeatFlag = 0;
+function playThisSong(url, id)
 {    
     for(var i = 0;i < 15; i++)
     {
@@ -20,25 +20,32 @@ function playThisSong(url, id, length)
 }
 function playNext()
 {
-    /*for (var i = 0; i <= 16; i++) 
-    {
-        alert(songQueue[i]);   
-    }*/
-    currentlyPlaying = i + 1;
-    var audio = document.getElementById("audioplayer");
-    audio.pause();
-    audio.removeAttribute("src");
-    audio.setAttribute("src",songQueue[i++]);
-    audio.play();
+    audioPlayer.pause();
+    audioPlayer.removeAttribute("src");
+    audioPlayer.setAttribute("src",songQueue[currentlyPlaying++]);
+    audioPlayer.play();
 }
 
 function playPrevious()
 {
-    currentlyPlaying = i - 1;
     audioPlayer.pause();
     audioPlayer.removeAttribute("src");
-    audioPlayer.setAttribute("src",songQueue[i--]);
+    audioPlayer.setAttribute("src",songQueue[currentlyPlaying--]);
     audioPlayer.play();
+}
+
+function toggleRepeat()
+{
+    if(repeatFlag ==0)
+    {
+        repeatFlag = 1;
+        return;
+    }
+    else
+    {
+        repeatFlag = 0;
+        return;
+    }
 }
 
 function CreateSeekBar()
@@ -88,8 +95,16 @@ function shuffle_songQueue()
 
 function EndOfAudio()
 {
-    document.getElementById("audioSeekBar").value = 0; 
-    document.getElementById("timelapsed").innerHTML = "0/" + Math.round(audio.duration); 
+    if(repeatFlag == 1)
+    {
+        audioPlayer.play();
+    }
+    else
+    {
+        //document.getElementById("audioSeekBar").value = 0; 
+        //document.getElementById("timelapsed").innerHTML = "0/" + Math.round(audioPlayer.duration); 
+        playNext();
+    }
 }
 function audioSeekBar()
 {

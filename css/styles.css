@@ -741,12 +741,52 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   cursor: pointer; 
 }
 
+#shuffleButton
+{
+  margin-left: 1152px;
+  margin-top: -47px;
+  position: absolute;
+  background-image: url("../images/button/next.png");
+  background-position: center;
+  background-size: cover;
+  border:none;
+  height: 80px;
+  width: 30px;
+  transition: 0.2s ease-in-out;
+}
+
+#shuffleButton:hover
+{
+  background-image: url("../images/button/red_previous.png");
+  cursor: pointer; 
+}
+
+#repeatButton
+{
+  margin-left: 1212px;
+  margin-top: -47px;
+  position: absolute;
+  background-image: url("../images/button/next.png");
+  background-position: center;
+  background-size: cover;
+  border:none;
+  height: 80px;
+  width: 30px;
+  transition: 0.2s ease-in-out;
+}
+
+#repeatButton:hover
+{
+  background-image: url("../images/button/red_previous.png");
+  cursor: pointer; 
+}
+
 tr
 {
   transition: 0.3s ease-in-out;
 }
-
 tr:hover
 {
   background-color: #616161;
+  cursor: pointer;
 }

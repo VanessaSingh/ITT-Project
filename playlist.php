@@ -79,7 +79,7 @@
                 $i=0;
                 while($row = mysqli_fetch_assoc($result))
                 {
-                    echo '<tr>
+                    echo '<tr onclick=playThisSong("'.$row["url"].'",'.$i.')>
                             <td> '.($i+1).' </td>
                             <td><a onclick=playThisSong("'.$row["url"].'",'.$i.')>'.$row["name"].'</a></td>
                             <td>'.$row["album"].'</td>
