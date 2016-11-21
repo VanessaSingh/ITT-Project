@@ -1,3 +1,7 @@
+Beats is an open source music player and was created as a project for ITT, Sem V, Manipal Institute of Technology. To use it, clone the repo, and simply add songs to the "song" folder- you're then good to go.
+
+
+
 =====================Beats Music Player=====================
 
 
@@ -7,10 +11,3 @@ Beats lets the user search the song library by artists, albums and genre. It has
 
 HTML 5, CSS, JavaScript 1.8 and PHP 5( with MySQL) concepts will be implemented in the creation of this web application.
 
-Soham Dongargaonkar
-Reg No: 140911090
-Roll No: 15
-Vanessa 
-Singh
-Reg No: 140911092
-Roll No: 16
