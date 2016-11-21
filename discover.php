@@ -40,7 +40,7 @@
         <div class="row">
             <div class="col-md-3 portfolio-item">                
                 <div class="hovereffect">
-                    <img onclick="window.open('playlist.php?mood=party')" class="img-responsive" src="images/party.jpg" alt="">                    
+                    <img onclick="window.open('playlist.php?mood=party','_self')" class="img-responsive" src="images/party.jpg" alt="">                    
                     <a class="info" href="playlist.php?mood=party"></a>
                 </div>
                     <p class="text-under-moods">Party</p>
@@ -48,21 +48,21 @@
             </div>
             <div class="col-md-3 portfolio-item">
                 <div class="hovereffect">
-                    <img onclick="window.open('playlist.php?mood=patriotic')" class="img-responsive" src="images/patriotic.jpg" alt="">
+                    <img onclick="window.open('playlist.php?mood=patriotic','_self')" class="img-responsive" src="images/patriotic.jpg" alt="">
                     <a class="info" href="playlist.php?mood=patriotic"></a>
                 </div>
                     <p class="text-under-moods">Patriotic</p>
             </div>
             <div class="col-md-3 portfolio-item">
                 <div class="hovereffect">
-                    <img onclick="window.open('playlist.php?mood=romantic')" class="img-responsive" src="images/romantic.jpg" alt="">
+                    <img onclick="window.open('playlist.php?mood=romantic','_self')" class="img-responsive" src="images/romantic.jpg" alt="">
                     <a class="info" href="playlist.php?mood=romantic"></a>
                 </div>
                     <p class="text-under-moods">Romantic</p>
             </div>
             <div class="col-md-3 portfolio-item">
                 <div class="hovereffect">
-                    <img onclick="window.open('playlist.php?mood=edm')" class="img-responsive" src="images/edm.png" alt="">
+                    <img onclick="window.open('playlist.php?mood=edm','_self')" class="img-responsive" src="images/edm.png" alt="">
                     <a class="info" href="playlist.php?mood=edm"></a>
                 </div>
                     <p class="text-under-moods">EDM</p>
@@ -72,27 +72,27 @@
         <div class="row">
             <div class="col-md-3 portfolio-item">
                 <div class="hovereffect">
-                    <img onclick="window.open('playlist.php?mood=folk')" class="img-responsive" src="images/folk.jpg" alt="">
+                    <img onclick="window.open('playlist.php?mood=folk','_self')" class="img-responsive" src="images/folk.jpg" alt="">
                     <a class="info" href="playlist.php?mood=folk"></a>
                 </div>
                     <p class="text-under-moods">Folk</p>
             </div>
             <div class="col-md-3 portfolio-item">
                 <div class="hovereffect">
-                    <img onclick="window.open('playlist.php?mood=meditation')" class="img-responsive" src="images/meditation.jpg" alt="">
+                    <img onclick="window.open('playlist.php?mood=meditation','_self')" class="img-responsive" src="images/meditation.jpg" alt="">
                     <a class="info" href="playlist.php?mood=meditation"></a>
                 </div>
                     <p class="text-under-moods">Meditation</p>
             </div>
             <div class="col-md-3 portfolio-item">
-                <div onclick="window.open('playlist.php?mood=salsa')" class="hovereffect">
+                <div onclick="window.open('playlist.php?mood=salsa','_self')" class="hovereffect">
                     <img class="img-responsive" src="images/salsa.jpg" alt="">
                     <a class="info" href="playlist.php?mood=salsa"></a>
                 </div>
                     <p class="text-under-moods">Salsa</p>
             </div>
             <div class="col-md-3 portfolio-item">
-                <div onclick="window.open('playlist.php?mood=sufi')" class="hovereffect">
+                <div onclick="window.open('playlist.php?mood=sufi','_self')" class="hovereffect">
                     <img class="img-responsive" src="images/sufi.jpg" alt="">
                     <a class="info" href="playlist.php?mood=sufi"></a>
                 </div>
@@ -103,27 +103,27 @@
         <div class="row">
         <div class="col-md-3 portfolio-item">
                 <div class="hovereffect">
-                    <img onclick="window.open('playlist.php?mood=travel')" class="img-responsive" src="images/travel.jpg" alt="">
+                    <img onclick="window.open('playlist.php?mood=travel','_self')" class="img-responsive" src="images/travel.jpg" alt="">
                     <a class="info" href="playlist.php?mood=travel"></a>
                 </div>
                     <p class="text-under-moods">Travel</p>
             </div>
             <div class="col-md-3 portfolio-item">
                 <div class="hovereffect">
-                    <img onclick="window.open('playlist.php?mood=cheerful')" class="img-responsive" src="images/cheerful.jpg" alt="">
+                    <img onclick="window.open('playlist.php?mood=cheerful','_self')" class="img-responsive" src="images/cheerful.jpg" alt="">
                     <p class="text-under-moods">Cheerful</p>
                 </div>
             </div>
             <div class="col-md-3 portfolio-item">
                 <div class="hovereffect">
-                    <img onclick="window.open('playlist.php?mood=dance')" class="img-responsive" src="images/dance.jpg" alt="">
+                    <img onclick="window.open('playlist.php?mood=dance','_self')" class="img-responsive" src="images/dance.jpg" alt="">
                     <a class="info" href="playlist.php?mood=dance"></a>
                 </div>
                     <p class="text-under-moods">Dance</p>
             </div>
             <div class="col-md-3 portfolio-item">
                 <div class="hovereffect">
-                    <img onclick="window.open('playlist.php?mood=dreamy')" class="img-responsive" src="images/dreamy.jpg" alt="">
+                    <img onclick="window.open('playlist.php?mood=dreamy','_self')" class="img-responsive" src="images/dreamy.jpg" alt="">
                     <a class="info" href="playlist.php?mood=dreamy"></a>
                 </div>
                     <p class="text-under-moods">Dreamy</p>
