@@ -102,6 +102,7 @@
         <div id="footer">
             <div id="seekbar-div">
                 <audio id="audioplayer" onpause="UpdatePlayPause()" onended="EndOfAudio()" ontimeupdate="SeekBar()" ondurationchange="CreateSeekBar()" onvolumechange="ChangeVolume()">     
+                	<source src="" type="">
                 </audio>
                 <input type="range" id="audioSeekBar" onchange="audioSeekBar()" value="0"/>
                 <span id="timelapsed"></span> <br>
